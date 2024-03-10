@@ -17,7 +17,7 @@ int main()
 			it=cond.erase(it);
 
 			//cond.erase(it);
-			/*迭代器在erase操作后，
+			/*迭代器在erase操作后，vs编译器会认为it直接失效了，
 			没有将循环变量i指向修改后的向量迭代器，就继续循环，
 			再与end()比较时断言出现。*/
 		else
