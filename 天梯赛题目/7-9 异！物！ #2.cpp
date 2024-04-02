@@ -46,14 +46,17 @@ YI WU!
 
 
 
-
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
+//上面把int定义成了long long 但main函数返回值是int
+//因此要用signed作为返回值
 signed main()
 {
     int t, thing;
+    //注意题目中的数据范围！！！
     int max, max2 = -pow(2, 60) - 1;
+    //Max_box是一个实时更新的现在盒子中最大值的栈
     stack<int> box, Max_box;
     string doing;
     cin >> t >> max;
